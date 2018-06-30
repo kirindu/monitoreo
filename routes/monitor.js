@@ -5,12 +5,12 @@ var MonitorController = require('../controllers/monitor');
 
 var api = express.Router();
 
-api.get('/obtener-memoria', MonitorController.infomem);
-api.get('/obtener-temperatura', MonitorController.infotemp);
-api.get('/obtener-carga', MonitorController.infoload);
-api.get('/obtener-infored', MonitorController.infonet);
-api.get('/obtener-infocpu', MonitorController.infocpu);
-api.get('/obtener-infoprocesos', MonitorController.infoprocesses);
+api.get('/get-mem', MonitorController.infomem);
+api.get('/get-temp', MonitorController.infotemp);
+api.get('/get-load', MonitorController.infoload);
+api.get('/get-net', MonitorController.infonet);
+api.get('/get-cpu', MonitorController.infocpu);
+api.get('/get-process', MonitorController.infoprocesses);
 
 
 module.exports = api;
